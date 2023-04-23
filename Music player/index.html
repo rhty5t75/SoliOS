@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Audio player</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="pusk">
+	<img src="img/logo.png" alt="">
+	<a href="../Video player/index.html"><img src="img/Movies_Icon.png" alt=""></a>
+	<a href="../Home/index.html"><img src="img/audio_icon.png" alt=""></a>
+	<img src="img/Trash_Icon.png" alt="">
+	<img src="img/SquareTile44x44.targetsize-48_altform-unplated_devicefamily-colorfulunplated.png" alt="">
+
+	<img src="img/alarm_icon.png" alt="">
+	<a href="../Sondurulur/index.html"> <img src="img/RestartNowPower_80.png" alt=""></a>
+	<a href="../Calculator/index.html"><img src="img/calendar.png" alt=""></a>
+</div>
+<div class="desktop">
+	<a href="../Calculator/index.html"><img src="img/calendar.png" alt="" class="indesktop one"></a>
+	<p class="onep">Calculator</p>
+	<a href=""><img src="img/SquareTile44x44.targetsize-48_altform-unplated_devicefamily-colorfulunplated.png" alt=""
+			class="indesktop two"></a>
+	<p class="twop">Explorer</p>
+</div>
+<div class="main">
+    <!-- top section -->
+    <div class="top_section">
+  		<h5>Soli Player&nbsp;&nbsp;<i class="fa fa-headphones" aria-hidden="true"></i></h5>
+  	</div>
+
+
+  <div class="tracks">
+    
+    <!-- list of song will add here from 'song_list.js' file -->
+
+    <!-- small music player -->
+    <div class="small_music_player">
+    	<div class="s_player_img">
+    		<div class="playing_img">
+    			<img src="images/1.jpg" alt="">
+    		</div>
+    	
+           <!-- wave animation part -->
+    	   <div class="wave_animation">
+			 <li></li>
+			 <li></li>
+			 <li></li>
+			 <li></li>
+			 <li></li>
+	       </div>
+	    </div>
+
+    	<div class="song_detail">
+    		<p id="song_name">Can dostum</p>
+    		<p id="artist_name">Damla</p>
+    	</div>
+    	<i class="fa fa-chevron-up" aria-hidden="true" id="up_player">▶</i>
+    </div>
+
+
+    <!--  popup music player part -->
+    <div class="popup_music_player">
+         <div class="top">
+    	    <p>Oxuyur</p>
+    	    <i class="fa fa-chevron-down" aria-hidden="true" id="down_player"></i>
+        </div>
+        
+       <div class="song_img">
+          <img src="images/1.jpg" alt="">
+       </div>
+
+       <div class="song_description">
+          <h3 id="current_track_name">Can dostum</h3>
+          <p id="current_singer_name">Damla</p>
+       </div>
+
+       <div class="controlls">
+    	 <div class="progress_part">
+    		<input type="range" min="0" max="100" value="0" id="slider" onchange="change_duration()">
+    		<div class="durations">
+    			<p id="current_duration">0:00</p>
+    		    <p id="total_duration">0:00</p>
+    		</div>
+
+       </div>
+    		
+        <!-- controlls btn's -->
+        <div class="controlls_btns">
+			<button id="backward_btn"><i class="fa fa-step-backward" aria-hidden="true">(</i></button>
+			<button id="play_pause_btn"><i class="fa fa-play" aria-hidden="true"></i></button>
+			<button id="forward_btn"><i class="fa fa-step-forward" aria-hidden="true">)</i></button>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<style>
+	body {
+		background-image: url(img/img26.jpg);
+	}
+
+	.indesktop {
+		width: 60px;
+		height: 50px;
+
+
+	}
+
+	.one {
+		position: absolute;
+		top: 5%;
+		left: 20px;
+	}
+
+	.two {
+		position: absolute;
+		top: 15%;
+		left: 20px;
+	}
+
+	.onep {
+		position: absolute;
+		top: 12%;
+		left: 15px;
+		color: white;
+
+	}
+
+	.twop {
+		position: absolute;
+		top: 23%;
+		left: 20px;
+		color: white;
+
+	}
+
+	.pusk img {
+		width: 40px;
+		height: 40px;
+		margin-top: 690px;
+		position: relative;
+		left: 0px;
+	
+	}
+
+	.pusk img:hover {
+		transform: scale(1.3);
+		transition-duration: 0.3s;
+	}
+</style>
+<!-- song list file -->
+<script src="song_list.js"></script>
+<!-- javascript -->
+<script src="main.js"></script>
+	
+</body>
+</html>

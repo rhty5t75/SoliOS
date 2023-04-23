@@ -1,0 +1,10 @@
+/* These styles will be applied on devices with a width of at least 1024px */
+@media screen and (min-width: 1024px) {
+  .pad__key:hover {
+    box-shadow: inset 0 0 1rem var(--blue);
+  }
+
+  .pad__key--equal:hover {
+    box-shadow: inset 0 0 1.5rem var(--green4);
+  }
+}

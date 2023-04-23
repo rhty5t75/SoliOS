@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media-queries.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <!-- Calculator display -->
+      <div class="calculator__display display">
+        <p class="display__operation"></p>
+        <p class="display__result"></p>
+      </div>
+
+      <!-- Calculator pad -->
+      <div class="calculator__pad pad">
+        <div class="pad__key pad__key--ac">AC</div>
+        <div class="pad__key pad__key--del">DEL</div>
+        <div class="pad__key pad__key--percent">%</div>
+        <div class="pad__key pad__key--divide">÷</div>
+        <div class="pad__key pad__key--7">7</div>
+        <div class="pad__key pad__key--8">8</div>
+        <div class="pad__key pad__key--9">9</div>
+        <div class="pad__key pad__key--multiply">x</div>
+        <div class="pad__key pad__key--4">4</div>
+        <div class="pad__key pad__key--5">5</div>
+        <div class="pad__key pad__key--6">6</div>
+        <div class="pad__key pad__key--subtract">-</div>
+        <div class="pad__key pad__key--1">1</div>
+        <div class="pad__key pad__key--2">2</div>
+        <div class="pad__key pad__key--3">3</div>
+        <div class="pad__key pad__key--add">+</div>
+        <div class="pad__key pad__key--dot">.</div>
+        <div class="pad__key pad__key--0">0</div>
+        <div class="pad__key pad__key--equal">=</div>
+      </div>
+    </div>
+        <div class="pusk">
+          <img src="img/logo.png" alt="Start" placeholder="Start">
+          <a href="../Video player/index.html"><img src="img/Movies_Icon.png" alt=""></a>
+        <a href="../Music player/index.html"><img src="img/audio_icon.png" alt=""></a>
+          <img src="img/Trash_Icon.png" alt="">
+          <img src="img/SquareTile44x44.targetsize-48_altform-unplated_devicefamily-colorfulunplated.png" alt="">
+        
+          <img src="img/alarm_icon.png" alt="">
+          <a href="../Sondurulur/index.html"><img src="img/RestartNowPower_80.png" alt=""></a>
+          <a href="../Home/index.html"><img src="img/calendar.png" alt=""></a>
+        </div>
+  <div class="desktop">
+    <a href="../Calculator/index.html"><img src="img/calendar.png" alt="" class="indesktop one"></a>
+    <p class="onep">Calculator</p>
+    <a href=""><img src="img/SquareTile44x44.targetsize-48_altform-unplated_devicefamily-colorfulunplated.png" alt=""
+        class="indesktop two"></a>
+    <p class="twop">Explorer</p>
+  </div>
+  <style>
+    body {
+      background-image: url(img/img26.jpg);
+    }
+  
+    .indesktop {
+      width: 60px;
+      height: 50px;
+  
+  
+    }
+  
+    .one {
+      position: absolute;
+      top: -85%;
+      left: 20px;
+    }
+  
+    .two {
+      position: absolute;
+      top: -73%;
+      left: 20px;
+    }
+  
+    .onep {
+      position: absolute;
+      top: 12%;
+      left: 15px;
+      color: white;
+  
+    }
+  
+    .twop {
+      position: absolute;
+      top: 23%;
+      left: 20px;
+      color: white;
+  
+    }
+          body {
+            background-image: url(img/img26.jpg);
+          }
+        
+          img {
+            width: 40px;
+            height: 40px;
+            margin-top: 670px;
+            position: relative;
+            left: -150px;
+            margin-right: 0px;
+          }
+        
+          img:hover {
+            transform: scale(1.3);
+            transition-duration: 0.3s;
+          }
+        </style>
+    <script src="dist/fitty.min.js"></script>
+    <script src="js/helpers.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
